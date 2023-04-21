@@ -21,11 +21,11 @@ async function fetchData() {
 }
 
 
-console.log(await fetchData())
-console.log(await fetchData())
-console.log(await fetchData())
-console.log(await fetchData())
+console.log(fetchData())
+console.log(fetchData())
+console.log(fetchData())
+console.log(fetchData())
 
 setTimeout(async () => {
-    console.log(await fetchData())
+    console.log(fetchData())
 }, 500)
