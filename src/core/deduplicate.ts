@@ -2,7 +2,7 @@ import { Fetcher, Deduplicate } from './types'
 import { cache } from './cache'
 
 /**
- * Cf. README.md for exemples an usage explanation 
+ * Cf. README.md for exemples and usage explanation 
  */
 export async function deduplicate<Data = unknown>(identifier: string, fetcher: Fetcher<Data>, time: number = 2000): ReturnType<Deduplicate<Data>> {
     try {
