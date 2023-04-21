@@ -1,6 +1,6 @@
 # Deduplicate
 
-Super simple "deduplicate" implementation, inspire by (useSWR)[https://swr.vercel.app/].  
+Super simple "deduplicate" implementation, inspire by [useSWR](https://swr.vercel.app/).  
 Please fork the repo if u want use it.
 
 It realy a super basic implementation, feel free to just copy the code an make more complexe
