@@ -12,8 +12,9 @@ export async function deduplicate<Data = unknown>(identifier: string, fetcher: F
 
         if (cache.get(identifier)) return { data: cache.get(identifier), error: false }
 
-        const res = await fetcher();
-        cache.set(identifier, res);
+        const res = await fetcher()
+        cache.set(identifier, res)
+        process.delete(identifier)
         setTimeout(() => cache.delete(identifier), time)
 
         return { data: res, error: false }
