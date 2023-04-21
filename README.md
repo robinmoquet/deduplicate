@@ -20,9 +20,9 @@ const { data, error } = await deduplicate('identifier', fetcher, 1000)
 ```
 
 ### Params
-- `identifier` : must be a string, use for store result in cache
-- `fetcher` : a async function, must be return the data (store in cache) or throw an error
-- `time` : duration (in milliseconds) of data is store in cache, by default is `2000`
+- `identifier` : must be a string, the key use for store result in cache
+- `fetcher` : a async function, must return the data (store in cache) or throw an error
+- `time` : duration (in milliseconds) during data is store in cache, by default is `2000`
 
 ### Return
 An object with properties `data` and `error`.
