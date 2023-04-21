@@ -1,0 +1,13 @@
+{
+  "name": "deduplicate",
+  "private": true,
+  "version": "1.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "tsc --watch",
+    "build": "tsc"
+  },
+  "devDependencies": {
+    "typescript": "^5.0.2"
+  }
+}
